@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 
 const UseState = () => {
     const [count, setCount]=useState(0);
+    const [name, setName]=useState(['me encanta un buen Merengue']);
   return (
     <div>
       <h1>Use State Component</h1>
@@ -20,6 +21,9 @@ const UseState = () => {
       <button onClick={()=>{
         setCount(0);
       }}>Reset</button>
+
+      <hr/>
+      {name}
 
     </div>
   )
