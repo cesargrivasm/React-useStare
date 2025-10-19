@@ -12,7 +12,9 @@ const UseState = () => {
       }}>Incrementar</button>
 
       <button onClick={()=>{
+        if(count > 0)
         setCount(count - 1);
+        
       }}>Decrementar</button>
 
       <button onClick={()=>{
